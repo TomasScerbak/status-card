@@ -27,14 +27,18 @@ body {
   background: var(--color-card-background);
   border-radius: 2rem;
   overflow: hidden;
+  margin: 10rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+  }
 }
 .card-image {
-  flex: 1;
-  object-fit: cover;
+  background-size: cover;
   width: 100%;
 }
 .card-body {
-  flex: 3;
   padding: 3rem 4rem;
   text-align: center;
 }
