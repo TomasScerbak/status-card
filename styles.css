@@ -2,7 +2,10 @@ html {
   font-size: 62.5%;
 }
 body {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-main-background);
   padding: 0;
   line-height: 1.5;
 }
@@ -18,4 +21,49 @@ body {
   --color-main-heading-stats: hsl(0, 0%, 100%);
   --color-main-paragraph: hsla(0, 0%, 100%, 0.75);
   --color-stats-heading: hsla(0, 0%, 100%, 0.6);
+}
+/* Main Card */
+.card {
+  background: var(--color-card-background);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.card-image {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+}
+.card-body {
+  flex: 3;
+  padding: 3rem 4rem;
+  text-align: center;
+}
+
+.card__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-main-heading-stats);
+}
+.insights {
+  color: var(--color-accent);
+}
+.card__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-main-paragraph);
+  letter-spacing: 0.1rem;
+}
+.stats__heading {
+  color: var(--color-main-heading-stats);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.stats__text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--color-stats-heading);
+  margin-top: 0;
+  letter-spacing: 0.1rem;
 }
