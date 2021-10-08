@@ -8,6 +8,7 @@ body {
   background-color: var(--color-main-background);
   padding: 0;
   line-height: 1.5;
+  min-height: 100vh;
 }
 *,
 *::before,
@@ -22,6 +23,10 @@ body {
   --color-main-paragraph: hsla(0, 0%, 100%, 0.75);
   --color-stats-heading: hsla(0, 0%, 100%, 0.6);
 }
+img {
+  width: 100%;
+  height: auto;
+}
 /* Main Card */
 .card {
   background: var(--color-card-background);
@@ -32,13 +37,20 @@ body {
 @media screen and (min-width: 768px) {
   .card {
     display: flex;
+    margin: 20rem 25rem;
   }
 }
 .card-image {
   object-fit: cover;
-  width: 100%;
+  flex: 1;
+}
+.card-image::before {
+  content: "";
+  mix-blend-mode: multiply;
+  background-color: var(--primary-clr);
 }
 .card-body {
+  flex: 1;
   padding: 3rem 4rem;
   text-align: center;
 }
