@@ -26,6 +26,7 @@ body {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 /* Main Card */
 .card {
@@ -37,7 +38,7 @@ img {
 @media screen and (min-width: 768px) {
   .card {
     display: flex;
-    margin: 20rem 25rem;
+    margin: 18rem 23rem;
   }
 }
 .card-image {
@@ -46,7 +47,6 @@ img {
 }
 .card-image::before {
   content: "";
-  mix-blend-mode: multiply;
   background-color: var(--primary-clr);
 }
 .card-body {
