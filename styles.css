@@ -24,6 +24,7 @@ body {
   --color-stats-heading: hsla(0, 0%, 100%, 0.6);
 }
 img {
+  object-fit: cover;
   width: 100%;
   height: auto;
   display: block;
@@ -42,18 +43,13 @@ img {
     display: flex;
     flex-direction: row-reverse;
     margin: 18rem 23rem;
+    max-width: 60vw;
   }
 }
 .card-image {
-  object-fit: cover;
-  flex: 1;
-}
-.card-image::before {
-  content: "";
-  background-color: var(--primary-clr);
+  mix-blend-mode: overlay;
 }
 .card-body {
-  flex: 1;
   padding: 3rem 4rem;
   text-align: center;
 }
@@ -88,16 +84,16 @@ img {
 }
 @media screen and (min-width: 768px) {
   .card__heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .card__text {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .stats__heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .stats__text {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .card-body {
     text-align: left;
