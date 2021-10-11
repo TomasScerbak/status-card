@@ -24,10 +24,8 @@ body {
   --color-stats-heading: hsla(0, 0%, 100%, 0.6);
 }
 img {
-  object-fit: cover;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
 }
 /* Main Card */
 .card {
@@ -37,18 +35,24 @@ img {
   border-radius: 2rem;
   overflow: hidden;
   margin: 10rem 2rem;
+  flex-shrink: 1;
 }
 @media screen and (min-width: 768px) {
   .card {
     display: flex;
     flex-direction: row-reverse;
     margin: 18rem 23rem;
-    max-width: 60vw;
+    max-width: 1440px;
   }
 }
 .card-image {
   width: 100%;
   mix-blend-mode: overlay;
+}
+@media screen and (min-width: 768px) {
+  .image {
+    background-image: url(/Images/image-header-desktop.jpg);
+  }
 }
 .card-body {
   padding: 3rem 4rem;
