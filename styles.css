@@ -47,6 +47,7 @@ img {
   }
 }
 .card-image {
+  width: 100%;
   mix-blend-mode: overlay;
 }
 .card-body {
