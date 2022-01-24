@@ -43,6 +43,9 @@ img {
   mix-blend-mode: overlay;
   object-fit: cover;
 }
+.card__image {
+  display: block;
+}
 .card-body {
   padding: 2rem 1rem;
   text-align: center;
