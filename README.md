@@ -60,4 +60,4 @@ there are still many option and usages how to work with GRID. I will continue le
 ## Author
 
 - Website - [Tomas Scerbak](https://tomasscerbak.github.io/tomas-scerbak-portfolio/)
-- Frontend Mentor - [@Potato
+- Frontend Mentor - [@Potato(https://www.frontendmentor.io/profile/TomasScerbak)
